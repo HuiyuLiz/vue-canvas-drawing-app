@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>7F-Canvas</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="cursor" :style="cursor"></div>
+    <!-- navbar 功能列表 -->
+    <nav class="navbar">
+      <ul class="navbar-nav" :class="{'toggle-hide': isToggle}">
+        <li class="nav-item" @click="saveCanvas">
+          <i class="material-icons">
+            save
+          </i>
+          <a class="nav-link" :href="url" download="canvas.png">SAVE</a>
+        </li>
+        <li class="nav-item " @click="initCanvas">
+          <i class="material-icons">
+            fullscreen
+          </i>
+          <a class="nav-link" href="#">CLEAR ALL</a>
+        </li>
+        <li class="nav-item " @click="undo">
+          <i class="material-icons">
+            undo
+          </i>
+          <a class="nav-link" href="#">UNDO</a>
+        </li>
+        <li class="nav-item " @click="redo">
+          <i class="material-icons">
+            redo
+          </i>
+          <a class="nav-link" href="#">REDO</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- navbar:點選收合 -->
+    <div class="navbar-toggle" @click="isToggle = !isToggle"><i class="material-icons arrow-down"
+        :class="{'toggle-rotate': isToggle}">
+        arrow_forward_ios
+      </i>
+    </div>
+
+    <!-- canvas -->
+    <canvas ref="canvas" id="myCanvas"></canvas>
+
+    <!-- 筆刷 icon:點選開合 -->
+    <div class="brush" @click="isToggle = !isToggle"><i class="material-icons">
+        brush
+      </i></div>
+
+    <!-- tools 工具列表 -->
+    <div class="tools" :class="{'tools-hide':isToggle}">
+      <template v-for="tool in tools">
+        <div class="tools-item" @click="selectTool(tool)"><i :class="[tool.class,{'active':tool.name===currentTool}]">
+            <span v-if="tool.name==='brush'">{{tool.name}}</span>
+          </i>
+        </div>
+      </template>
+      <div class="tools-item">SIZE:
+        <input class="item-number" type="number" min="10" max="100" step="10" v-model.number="lineWidth">px
+      </div>
+      <div class="tools-item">
+        <ul class="colors">COLOR:
+          <li v-for="color in colors" :class="{'color-item':true,'active':color===currentColor}" :key="color"
+            :style="{backgroundColor:color}" @click="colorPicker(color)">
+            <i class="material-icons">check</i>
+          </li>
+          <li class="color-item active" @click="randomColor">
+            <i class="material-icons" :class="{'active':random===currentColor}">
+              colorize
+            </i>
+            <input type="color" id="randomInput" v-model="random" @change="randomColor">
+          </li>
+        </ul>
+      </div>
+
+      <div class="tools-toggle" @click="isToggle = !isToggle">
+        <i class="material-icons arrow-down">
+          arrow_forward_ios
+        </i>
+      </div>
+
+    </div>
+
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.js'></script>
+  <script src="./all.js"></script>
+</body>
+
+</html>
