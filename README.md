@@ -11,6 +11,19 @@
  <a href="https://www.youtube.com/watch?v=8ZGAzJ0drl0" target="_blank">Wes Bos - Let's build something fun with HTML5 Canvas</a>  
  
  JavaScript 30 系列之一，用原生 JS 實做一個 Canvas 小專案，不得不說這系列相當實用，看完後會更清楚如何製作，順便應用到這次的專案上，本案救星。
+
+## 特定技術 遊戲規則
+
+ 繪圖區請使用 Canvas 來設計，上方的控制列與下方的畫筆調整可不用  
+
+ SAVE ：點擊後可直接下載轉出的 PNG 圖片  
+
+ CLEAR ALL：清除畫版樣式  
+
+ UNDO、REDO：上一步、下一步  
+
+ 點擊箭頭時，功能列介面皆可進行收闔  
+
 ## 擴充功能
 【橡皮擦】點選橡皮擦，將 canvas 中的 strokeStyle 設定與背景顏色相同，進行繪製時可覆蓋原本已繪製的地方。
 
