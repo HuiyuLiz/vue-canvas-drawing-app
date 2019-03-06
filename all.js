@@ -17,6 +17,7 @@ new Vue({
     lastY: 0,
     isDrawing: false,
     isToggle: false,
+    isBrush: true,
     canvas: null,
     ctx: null,
     cursor: '',
@@ -73,11 +74,22 @@ new Vue({
     colorPicker(color) {
       let vm = this
       vm.currentColor = color
+      vm.isBrush = true
+      vm.setCurrentTool()
     },
     randomColor() {
       let vm = this
       let randomInput = document.querySelector('#randomInput')
       vm.currentColor = randomInput.value
+      vm.isBrush = true
+      vm.setCurrentTool()
+    },
+    setCurrentTool() {
+      // 選取顏色後工具自動切回筆刷
+      let vm = this
+      if (vm.isBrush === true) {
+        vm.currentTool = 'brush'
+      }
     },
     selectTool(tool) {
       let vm = this
@@ -91,8 +103,10 @@ new Vue({
       vm.ctx.lineTo(e.offsetX, e.offsetY)
 
       if (vm.currentTool === 'brush') {
+        vm.isBrush = true
         vm.ctx.strokeStyle = vm.currentColor
       } else {
+        vm.isBrush = false
         vm.ctx.strokeStyle = '#e8e8e8'
       }
       vm.ctx.lineWidth = vm.lineWidth
