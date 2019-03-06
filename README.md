@@ -3,8 +3,7 @@
  <a href="https://huiyuliz.github.io/Canvas/#" target="_blank">Demo</a>、
  <a href="https://github.com/HuiyuLiz/Canvas" target="_blank">程式碼</a>
  
- 使用 Vue.js 進行破關，專案中的 canvas 可以透過 .toDataURL( ) ，將畫布中的筆畫轉成 <a href="https://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank">data URI scheme</a> 用來記錄步驟
- ；清除畫布時再重新繪製新的矩形覆蓋。
+ 使用 Vue.js 進行破關，專案中的 canvas 可以透過 .toDataURL( ) ，將畫布中的筆畫轉成 <a href="https://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank">data URI scheme</a> ，圖片將會在 Base64 編碼後內嵌網頁，以此用來記錄 undo 、 redo 步驟，清除畫布時再重新繪製新的矩形覆蓋。
 
 
 ## 預先暖身
@@ -67,5 +66,6 @@
 
 ## 參考資料
 <a href="https://www.oxxostudio.tw/articles/201409/pointer-events.html" target="_blank">穿透的 div ( pointer-events )</a>  
+<a href="https://blog.gtwang.org/web-development/minimizing-http-request-using-data-uri/" target="_blank">使用 DATA URI 將圖片以 Base64 編碼並內崁至網頁中，加速載入速度</a>  
 
 
