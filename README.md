@@ -67,6 +67,8 @@
 ```
 
 ## 參考資料
+<a href="https://www.codicode.com/art/undo_and_redo_to_the_html5_canvas.aspx" target="_blank">Undo and Redo with HTML5 Canvas
+</a>  
 <a href="https://www.youtube.com/watch?v=rfpRZ2t_BrQ" target="_blank">Creating Custom Cursors 自訂游標</a>  
 <a href="https://www.oxxostudio.tw/articles/201409/pointer-events.html" target="_blank">穿透的 div ( pointer-events )</a>  
 <a href="https://blog.gtwang.org/web-development/minimizing-http-request-using-data-uri/" target="_blank">使用 DATA URI 將圖片以 Base64 編碼並內崁至網頁中，加速載入速度</a>  
