@@ -1,5 +1,5 @@
 # JavaScript 題目篇 - 新手 JS 地下城
- ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/demo.jpg)  
+ ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas.png)  
  
  7F - 畫版
  <a href="https://huiyuliz.github.io/vue-canvas-drawing-app/" target="_blank">Demo</a>、
