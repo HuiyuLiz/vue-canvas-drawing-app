@@ -55,7 +55,7 @@
 實做到一半發現 input 上加了 material icon 中的滴管圖形後，出現了無法點選到下層 input 的問題，怎麼點都會先點到滴管圖形導致無法操作，後來搜尋了一下可以用 css 中的 pointer-events: none 避免，
 加入後 input 就不會再被上層元件遮住。  
 
-這行 css 同時也加在隨著滑鼠移動的游標中，避免和畫畫時的滑鼠事件互相干擾，嗯，JS又可以少寫一行了。
+這行 css 同時也加在隨著滑鼠移動的游標中，避免和畫畫時的滑鼠事件互相干擾。
 
 ```css
 .cursor {
@@ -65,12 +65,15 @@
   pointer-events: none;
 }
 ```
-
+## pickr 顏色選取套件
+ ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas2.png?raw=true)  
+  原本使用 input color 讓使用者自訂顏色，剛好看到了<a href="https://github.com/Simonwep/pickr" target="_blank">pickr</a>套件，外觀上與畫板更有一致性，修改的版本放在 <a href="https://codepen.io/liscodecode/pen/ZPLGxX" target="_blank">CodePen。</a>
+ 
 ## 參考資料
 <a href="https://www.codicode.com/art/undo_and_redo_to_the_html5_canvas.aspx" target="_blank">Undo and Redo with HTML5 Canvas
 </a>  
 <a href="https://www.youtube.com/watch?v=rfpRZ2t_BrQ" target="_blank">Creating Custom Cursors 自訂游標</a>  
 <a href="https://www.oxxostudio.tw/articles/201409/pointer-events.html" target="_blank">穿透的 div ( pointer-events )</a>  
 <a href="https://blog.gtwang.org/web-development/minimizing-http-request-using-data-uri/" target="_blank">使用 DATA URI 將圖片以 Base64 編碼並內崁至網頁中，加速載入速度</a>  
-
+<a href="https://www.youtube.com/watch?v=RSbZJYVQmPU" target="_blank">Pickr - An Awesome Color Picker for your next Project!</a>  
 
