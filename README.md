@@ -67,7 +67,7 @@
 ```
 ## pickr 顏色選取套件
  ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas2.png?raw=true)  
-  原本使用 input color 讓使用者自訂顏色，剛好看到了<a href="https://github.com/Simonwep/pickr" target="_blank">pickr</a>套件，外觀上與畫板更有一致性，修改的版本放在 <a href="https://codepen.io/liscodecode/pen/ZPLGxX" target="_blank">CodePen。</a>
+  原本使用 input color 讓使用者自訂顏色，剛好看到了 <a href="https://github.com/Simonwep/pickr" target="_blank">pickr</a> 套件，外觀上與畫板更有一致性，修改的版本放在 <a href="https://codepen.io/liscodecode/pen/ZPLGxX" target="_blank">CodePen。</a>
  
 ## 參考資料
 <a href="https://www.codicode.com/art/undo_and_redo_to_the_html5_canvas.aspx" target="_blank">Undo and Redo with HTML5 Canvas
