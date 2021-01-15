@@ -60,12 +60,15 @@ body {
   user-select: none;
   cursor: pointer;
   transition: all 0.3s;
+
   &:hover {
+
     .material-icons,
     .nav-link {
       color: #00cc99;
     }
   }
+
   &:active .material-icons {
     transform: scale(1.1);
   }
@@ -88,14 +91,14 @@ body {
 .nav-item:nth-child(1),
 .nav-item:nth-child(3),
 .nav-item:nth-child(4) {
-  > .material-icons {
+  >.material-icons {
     font-size: 48px;
     padding-right: 7px;
   }
 }
 
 .nav-item:nth-child(2) {
-  > .material-icons {
+  >.material-icons {
     font-size: 60px;
   }
 }
@@ -158,22 +161,27 @@ body {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
   user-select: none;
-  > .tools-item .brush-icon,
+
+  >.tools-item .brush-icon,
   .tools-item .fa-eraser {
     cursor: pointer;
     font-size: 44px;
     padding-left: 40px;
+
     &.active {
       color: #00cc99;
     }
+
     &:active {
       transform: scale(1.1);
     }
   }
-  > .tools-item .fa-eraser {
+
+  >.tools-item .fa-eraser {
     padding-left: 20px;
     padding-right: 30px;
   }
+
   .item-number {
     width: 74px;
     height: 48px;
@@ -189,22 +197,25 @@ body {
     overflow: hidden;
     box-sizing: border-box;
   }
+
   input[type="text"]:focus,
   input:focus {
     outline: none;
   }
+
   .tools-toggle {
     display: block;
     width: 56px;
     height: 56px;
     background-color: white;
     margin: 0 auto;
-    margin-top: -38px;
+    margin-top: -80px;
     left: calc((820px - 56px) / 2);
     border-radius: 56px;
     position: absolute;
     cursor: pointer;
   }
+
   .arrow-down {
     display: block;
     font-size: 0.8rem;
@@ -235,6 +246,7 @@ body {
   user-select: none;
   cursor: pointer;
   transition: all 0.2s ease-in;
+
   &:hover {
     transform: scale(1.1);
   }
@@ -246,6 +258,7 @@ body {
   padding-left: 30px;
   user-select: none;
   list-style: none;
+
   .material-icons {
     color: transparent;
     font-size: 1.5rem;
@@ -253,6 +266,7 @@ body {
     padding-left: 12px;
     text-align: center;
   }
+
   .color-item {
     width: 48px;
     height: 48px;
@@ -262,21 +276,25 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s;
+
     &.active {
       .material-icons {
         color: black;
       }
     }
+
     &:active {
       transform: scale(1.1);
     }
   }
+
   .color-item:nth-child(1) {
     width: 46px;
     height: 46px;
     border: 2px solid #000000;
     margin-left: 16px;
   }
+
   .color-item:nth-child(2) {
     &.active {
       .material-icons {
@@ -284,6 +302,7 @@ body {
       }
     }
   }
+
   .color-item:nth-child(6) {
     width: 48px;
     height: 48px;
@@ -291,18 +310,21 @@ body {
     display: block;
     position: relative;
     overflow: hidden;
+
     &.active {
       .material-icons {
         color: rgb(120, 120, 120);
         z-index: 9999;
         position: absolute;
         pointer-events: none;
+
         &.active {
           color: black;
         }
       }
     }
   }
+
   input[type="color"] {
     width: 60px;
     height: 60px;
