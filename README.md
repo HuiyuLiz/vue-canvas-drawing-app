@@ -11,7 +11,7 @@
 ## 預先暖身
  <a href="https://www.youtube.com/watch?v=8ZGAzJ0drl0" target="_blank">Wes Bos - Let's build something fun with HTML5 Canvas</a>  
  
- JavaScript 30 系列之一，用原生 JS 實做一個 Canvas 小專案，不得不說這系列相當實用，看完後會更清楚如何製作，順便應用到這次的專案上，本案救星。
+ JavaScript 30 系列之一，用原生 JS 實做一個 Canvas 小專案，不得不說這系列相當實用，看完後會更清楚如何製作，順便應用到這次的專案上。
 
 ## 特定技術 遊戲規則
 
