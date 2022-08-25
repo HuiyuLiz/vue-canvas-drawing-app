@@ -1,7 +1,7 @@
-# JavaScript 題目篇 - 新手 JS 地下城
+# Vue.js Drawing App
  ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas.png)  
  
- 7F - 畫版
+畫版
  <a href="https://huiyuliz.github.io/vue-canvas-drawing-app/" target="_blank">Demo</a>、
  <a href="https://github.com/HuiyuLiz/vue-canvas-drawing-app" target="_blank">程式碼</a>  
  
@@ -52,7 +52,7 @@
      },
     })
 ```
-實做到一半發現 input 上加了 material icon 中的滴管圖形後，出現了無法點選到下層 input 的問題，怎麼點都會先點到滴管圖形導致無法操作，後來搜尋了一下可以用 css 中的 pointer-events: none 避免，
+實做到一半發現 input 上加了 material icon 中的滴管圖形後，出現了無法點選到下層 input 的問題，點擊會先點到滴管圖形導致無法操作，搜尋了一下可以用 css 中的 pointer-events: none 避免，
 加入後 input 就不會再被上層元件遮住。  
 
 這行 css 同時也加在隨著滑鼠移動的游標中，避免和畫畫時的滑鼠事件互相干擾。
