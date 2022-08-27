@@ -11,7 +11,7 @@
 ## 預先暖身
  <a href="https://www.youtube.com/watch?v=8ZGAzJ0drl0" target="_blank">Wes Bos - Let's build something fun with HTML5 Canvas</a>  
  
- JavaScript 30 系列之一，用原生 JS 實做一個 Canvas 小專案，不得不說這系列相當實用，看完後會更清楚如何製作，順便應用到這次的專案上。
+ JavaScript 30 系列之一，用原生 JS 實做 Canvas ，練習後可應用到這次的專案上。
 
 ## 特定技術 遊戲規則
 
@@ -52,8 +52,8 @@
      },
     })
 ```
-實做到一半發現 input 上加了 material icon 中的滴管圖形後，出現了無法點選到下層 input 的問題，點擊會先點到滴管圖形導致無法操作，搜尋了一下可以用 css 中的 pointer-events: none 避免，
-加入後 input 就不會再被上層元件遮住。  
+由於 input 上有 material icon 中的滴管圖形 icon，出現了無法點選到下層 input 的問題，導致無法操作，可以用 css 中的 pointer-events: none 避免，
+加入後 input 功能就不會再被上層元件遮住。  
 
 這行 css 同時也加在隨著滑鼠移動的游標中，避免和畫畫時的滑鼠事件互相干擾。
 
@@ -67,7 +67,7 @@
 ```
 ## pickr 顏色選取套件
  ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas2.png?raw=true)  
-  原本使用 input color 讓使用者自訂顏色，剛好看到了 <a href="https://github.com/Simonwep/pickr" target="_blank">pickr</a> 套件，外觀上與畫板更有一致性，修改的版本放在 <a href="https://codepen.io/liscodecode/pen/ZPLGxX" target="_blank">CodePen。</a>
+  除了 input color 讓使用者自訂顏色，另外使用了 <a href="https://github.com/Simonwep/pickr" target="_blank">pickr</a> 套件，外觀上與畫板更有一致性，修改的版本放在 <a href="https://codepen.io/liscodecode/pen/ZPLGxX" target="_blank">CodePen。</a>
  
 ## 參考資料
 <a href="https://www.codicode.com/art/undo_and_redo_to_the_html5_canvas.aspx" target="_blank">Undo and Redo with HTML5 Canvas
