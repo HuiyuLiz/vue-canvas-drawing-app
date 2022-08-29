@@ -1,6 +1,6 @@
 # Vue.js Drawing App
  ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas.png)  
-使用 Vue.js 進行破關，專案中的 Canvas 可以透過 .toDataURL( ) ，將畫布中的筆畫轉成 base64 字串，編碼後可以存成圖片內嵌至網頁內，以此用來記錄 UNDO 、 REDO 步驟，清除畫布時再重新繪製新的矩形覆蓋。
+使用 Vue.js 進行實作，專案中的 Canvas 可以透過 .toDataURL( ) ，將畫布中的筆畫轉成 base64 字串，編碼後可以存成圖片內嵌至網頁內，以此用來記錄 UNDO 、 REDO 步驟，清除畫布時再重新繪製新的矩形覆蓋。
 
 
 ## 預先暖身
