@@ -1,10 +1,6 @@
 # Vue.js Drawing App
  ![image]( https://github.com/HuiyuLiz/vue-canvas-drawing-app/blob/master/FireShot-%207F-Canvas.png)  
  
-畫版
- <a href="https://huiyuliz.github.io/vue-canvas-drawing-app/" target="_blank">Demo</a>、
- <a href="https://github.com/HuiyuLiz/vue-canvas-drawing-app" target="_blank">程式碼</a>  
- 
  使用 Vue.js 進行破關，專案中的 Canvas 可以透過 .toDataURL( ) ，將畫布中的筆畫轉成 base64 字串，編碼後可以存成圖片內嵌至網頁內，以此用來記錄 UNDO 、 REDO 步驟，清除畫布時再重新繪製新的矩形覆蓋。
 
 
@@ -52,8 +48,8 @@
      },
     })
 ```
-由於 input 上有 material icon 中的滴管圖形 icon，出現了無法點選到下層 input 的問題，導致無法操作，可以用 css 中的 pointer-events: none 避免，
-加入後 input 功能就不會再被上層元件遮住。  
+由於 input 上有 material icon 中的滴管圖形，出現了無法點選到下層 input 的問題，可使用 css 中的 pointer-events: none 避免，
+加入後功能就不會再被上層圖形遮住。  
 
 這行 css 同時也加在隨著滑鼠移動的游標中，避免和畫畫時的滑鼠事件互相干擾。
 
